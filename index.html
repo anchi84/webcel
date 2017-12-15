@@ -8,20 +8,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/webcel.css">
+	 <link rel="stylesheet" href="css/webcel.css">
 
   </head>
   <body>
     <h1>Webcel project!</h1>
-	 
-	 <p>New name: <input type="txt" id="name"/></p>
-	 <p>New age:  <input type="number" id="age"/>
-	 </p>
-	 <p>
-	 <input type="submit" value="Add new person!" id="add" onclick="add()"/>
-	</p>
+	   <p>New name: <input type="text" id="name"/></p>
+	   <p>New age: &nbsp;<input type="number" id="age"/></p>
+	   <p>
+	     <input type="submit" value="Add new person!" id="add" onclick="add()"/>
+	   </p>
 
-	<table class= "table-striped" style="width:100%" id="tbl">
+	   <table class= "table-striped" style="width:100%" id="tbl">
   <!--<tr>
     <td>01</td>
     <td>Sanja Simic</td> 
@@ -34,7 +32,7 @@
   </tr>
   <tr>
     <td>03</td>
-    <td>Sanja Simic</td> 
+    <td>Sofija Simic</td> 
     <td>30</td>
   </tr>
   <tr>
@@ -72,27 +70,30 @@
     <td>Ivana Mihic</td> 
     <td>45</td>
   </tr> -->
-</table>
-<br/>
-
-<h2>Statistics!</h2>
-<div> 
-	<input type="submit" value="Min!" onclick="mini()"/>
-	<p id = "min"></p>
-	<input type="submit" value="Max!"  onclick="maxi()"/>
-	<p id = "max"></p>
-	<input type="submit" value="Avg!"  onclick="avg()"/>
-	<p id = "avg"></p>
-</div>
-	  
-<button id="sort" onclick="sort()">Sort!</button>
+    </table>
+    <br/>
+    <div>
+      <input type="submit" value="SortById!" id="sort" onclick="sortTable(0)"/>
+      <input type="submit" value="SortByName!" id="sort" onclick="sortTable(1)"/>
+      <input type="submit" value="SortByAge!" id="sort" onclick="sortTable(2)"/>
+    </div> 
+    <br/>
+    <h2>Statistics!</h2>
+    <div> 
+	     <input type="submit" value="Min!" onclick="mini()"/>
+	     <p id = "min"></p>
+	     <input type="submit" value="Max!"  onclick="maxi()"/>
+	     <p id = "max"></p>
+	     <input type="submit" value="Avg!"  onclick="avg()"/>
+	     <p id = "avg"></p>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="js/webcel.js"></script>
+	   <script src="js/webcel.js"></script>
 
   </body>
 </html>
